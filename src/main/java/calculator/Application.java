@@ -14,7 +14,7 @@ public class Application {
     }
 
     public static int calculate(String input) {
-        if (input == null || input.isEmpty()) throw new IllegalArgumentException();
+        if (input == null || input.isEmpty()) return 0;
         input = input.replace("\\n", "\n"); // test : 커스텀_구분자_사용() 통과를 위해 추가
 
         String delimiter;
